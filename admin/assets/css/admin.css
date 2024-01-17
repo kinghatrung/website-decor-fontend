@@ -1,0 +1,158 @@
+/* Color: 
+- #605E5E
+- #363636 
+*/
+
+:root {
+    --box-color: #605E5E;
+    --text-color: #363636;
+    --hover-color: rgba(128, 128, 128, 0.125);
+    --white-color: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* hành động khi cuộn */
+    scroll-behavior: smooth;
+    font-family: 'Raleway', serif;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    margin: 0 80px;
+    border-bottom: 2px solid var(--box-color);
+}
+
+.nav-logo__text {
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--text-color);   
+    font-weight: 400;
+}
+
+.nav-logo__text:hover {
+    opacity: 0.6;
+    transition: 0.5s all;
+}
+
+.nav {
+    display: inline-flex;
+}
+
+.nav li {
+    list-style-type: none;
+}
+
+.nav li a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 15px;
+    line-height: 40px;
+    color: var(--text-color);
+}
+
+.nav li a:hover{
+    background-color: var(--hover-color);
+    border-radius: 5px;
+}
+
+.btn-box,
+.input-box,
+.form-box {
+    display: inline-flex;
+    align-items: center;
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    background-color: var(--white-color);
+    border-bottom: 1px solid var(--box-color);
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    height: 40px;
+    width: 20px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.input-search-box {
+    outline: none;
+    border-bottom: 1px solid var(--box-color);
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    color: var(--text-color);
+    padding: 0 10px;
+    font-size: 14px;
+    height: 40px;
+    width: 250px;
+}
+
+.user-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.login-sign {
+    display: none;
+    position: absolute;
+    top: 120%;
+    right: 10px;
+    min-width: 120px;
+    background-color: var(--white-color);
+    border: 1px solid var(--box-color);
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.125); 
+    border-radius: 5px;
+}
+
+.user-box:hover .login-sign {
+    display: block;
+}
+
+.login-sign li {
+    list-style-type: none;
+}
+
+.login-sign a {
+    display: block;
+    text-transform: uppercase;
+    color: var(--text-color);
+    line-height: 40px;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 0 12px;
+}
+
+.login-sign a:hover {
+    background-color: var(--hover-color);
+}
+
+.line {
+    width: 1px;
+    height: 30px;
+    background-color: var(--box-color);
+    margin: 0 10px;
+}
