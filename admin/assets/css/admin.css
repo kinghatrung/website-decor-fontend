@@ -31,13 +31,21 @@ html {
     font-family: 'Raleway', serif;
 }
 
+.main {
+    padding: 0 80px;
+}
+
 .header {
+    position: fixed;
+    top: 0;
+    left: 80px;
+    right: 80px;
     height: 80px;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--background-color);
-    margin: 0 80px;
     border-bottom: 2px solid var(--box-color);
 }
 
@@ -164,4 +172,65 @@ html {
     height: 30px;
     background-color: var(--box-color);
     margin: 0 10px;
+}
+
+.content {
+    background: url('/Web-site/Web-Decor/assets/img/slider/anh1.jpg') top center / cover no-repeat;
+    border-bottom: 2px solid #605E5E;   
+    padding-top: 50%;
+    margin-top: 80px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80px;
+    border-top: 2px solid #605E5E;
+    background-color: #fff;
+    font-family: 'Tinos', serif;
+    margin: 0 80px;
+}
+
+.footer .footer-content {
+    text-align: center;
+}
+
+.footer .content-text {
+    font-size: 14px;
+    font-style: italic;
+    color: #605E5E;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+
+.footer .content-text a {
+    color: #605E5E;
+    font-family: 14px;
+}
+
+.footer .content-icons a:hover,
+.footer .content-text a:hover {
+    opacity: 0.6;
+    transition: 0.4s all;
+}
+
+.footer .footer-icon-link,
+.footer .footer-icon,
+.footer .content-icons {
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer .content-icons a {
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 4px;
+}
+
+.footer .content-icons {
+    min-height: 22px;
+    margin-top: 5px;
 }
