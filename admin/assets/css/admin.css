@@ -175,12 +175,10 @@ html {
 }
 
 .content {
-    background: url('/Web-site/Web-Decor/assets/img/slider/anh1.jpg') top center / cover no-repeat;
-    border-bottom: 2px solid #605E5E;   
-    padding-top: 50%;
-    margin-top: 80px;
+    
 }
 
+/* Footer */
 .footer {
     position: fixed;
     left: 0;
